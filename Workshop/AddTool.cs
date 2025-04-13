@@ -24,6 +24,11 @@ namespace Workshop
                 Console.WriteLine("Błąd: Wprowadź poprawną liczbę całkowitą!");
                 return;
             }
+            if(amount < 0)
+             {
+                 Console.WriteLine("Błąd: Wprowadź poprawną liczbę całkowitą!");
+                 return;
+             }
 
             Console.Write("Podaj cenę narzędzia: ");
             if (!double.TryParse(Console.ReadLine(), out double price))
